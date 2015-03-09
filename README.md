@@ -15,11 +15,11 @@ Also, I want to add in a social feature to this. Github is an awesome way to col
 ## Possible Technologies to use
 
 The first purpose of this app is, first and foremost, to learn. This is a list of technologies/concepts that I might want to explore, as they fit into the idea:
-*First I need to choose what language I want the server to be in
+* First I need to choose what language I want the server to be in
 	* Node (express or sails)
 	* Ruby (most likely rails)
 	* Python (I want to learn python, most notably flask or Django)
-*I'd like to use heavy front-end javascript, with the thought of going into a front-end framework. I still need to figure out how to implement this into the idea as it has the feeling of a much more multipage app.
+* I'd like to use heavy front-end javascript, with the thought of going into a front-end framework. I still need to figure out how to implement this into the idea as it has the feeling of a much more multipage app.
 	* react.js
 	* angular
 	* ember
