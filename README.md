@@ -11,6 +11,10 @@ Also, I want to add in a social feature to this. Github is an awesome way to col
 ## Agenda
 
 * The first thing I want to do is create a generic recipe storage app with the ability to create and edit recipes
+* Maybe pull in recipes that you can use from API
+* Share recipes with others
+* "Fork" recipes with the ability to suggest to someone a way to better their recipe
+* "Branch" recipes in git fashion
 
 ## Possible Technologies to use
 
