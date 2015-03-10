@@ -17,8 +17,20 @@ Also, I want to add in a social feature to this. Github is an awesome way to col
 The purpose of this app is, first and foremost, to learn. This is a list of technologies/concepts that I might want to explore, as they fit into the idea:
 * First I need to choose what language I want the server to be in
 	* Node (express or sails)
+		* definitely most familiar with express
+		* really like javascript
+		* would like to be "cool"
+		* would need to learn new ORM, would miss active records
+		* definitely harder in terms of concepts
 	* Ruby (most likely rails)
+		* a lot of people like rails
+		* active records is FANTASTIC
+		* I'm not a huge fan of writing in ruby
+		* does so much for you, I feel like im learning non-transferable skills
 	* Python (I want to learn python, most notably flask or Django)
+		* python is awesome
+		* I'm very curious about it
+		* its new to me, and so I feel like I should focus on mastering what I already have under my belt
 * I'd like to use heavy front-end javascript, with the thought of going into a front-end framework. I still need to figure out how to implement this into the idea as it has the feeling of a much more multipage app.
 	* react.js
 	* angular
