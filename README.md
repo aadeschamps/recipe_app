@@ -27,6 +27,7 @@ Also, I want to add in a social feature to this. Github is an awesome way to col
 * Share recipes with others
 * "Fork" recipes with the ability to suggest to someone a way to better their recipe
 * "Branch" recipes in git fashion
+* Take notes on recipes "possibly a phone app that takes "
 
 ## Possible Technologies to use
 
