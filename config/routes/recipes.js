@@ -6,7 +6,6 @@ var router = express.Router();
 
 
 module.exports = function(db){
-	
 	var controller = require('../../app/controller/recipes')(db);
 
 	router.get('/', controller.index);
