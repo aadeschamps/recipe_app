@@ -1,15 +1,23 @@
 
-module.exports = {
-	index: function(req, res, next){
-		res.send({recipes: 'all the recipes'});
-		// res.render('recipes', {});
-	},
+module.exports = function(db) {
+	var Recipes = db.models.Recipe;
 
-	newPage: function(req, res, next){
-		res.render('index', {title: 'New'});
-	},
+	return {
+		index: function(req, res, next){
+			Recipes.find({created_by: 1}, function(err, recipes){
+				res.send(recipes);
+			})
+		},
 
-	create: function(req, res, next){
-		res.render('index', {title: 'New'});
+		newPage: function(req, res, next){
+			res.render('recipe/new', {title: 'New'});
+		},
+
+		create: function(req, res, next){
+			Recipes.create({name: req.body.name, created_by: 1},function(err, rec){
+				console.log(rec);
+			});
+			res.redirect('/recipes');
+		}
 	}
 }

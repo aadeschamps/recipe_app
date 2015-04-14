@@ -1,8 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var index = require('../../app/controller/index')
+
 
 /* GET home page. */
-router.get('/', index.index);
 
-module.exports = router;
+module.exports = function(db){
+	var index = require('../../app/controller/index')(db);
+	
+	router.get('/', index.index);
+
+	return router;
+};

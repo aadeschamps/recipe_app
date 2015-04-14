@@ -1,0 +1,7 @@
+
+extends ../layout
+
+block content
+	h1 new recipe here
+	form(method='post', action='/recipes')
+		input(type='text', placeholder='recipe name', name='name')
