@@ -5,9 +5,22 @@ module.exports = function(db) {
 
 	return {
 		index: function(req, res, next){
-			Recipes.find({created_by: 1}, function(err, recipes){
-				res.send(recipes[recipes.length-1].populate('ingredients'));
-			})
+			Recipes.find({created_by: 1})
+				.populate('ingredients')
+				.exec(function(err, recipes){
+					res.send(recipes);
+				}) 
+
+
+
+			// 	function(err, recipes){
+			// 	res.send(recipes[recipes.length-1].populate('ingredients'));
+			// })
+				// Ingredient.findOne()
+				// 	.populate('_recipe')
+				// 	.exec(function(err, story){
+				// 		res.send(story);
+				// 	})
 		},
 
 		newPage: function(req, res, next){
