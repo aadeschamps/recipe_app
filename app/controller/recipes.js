@@ -9,7 +9,7 @@ module.exports = function(db) {
 				.populate('ingredients')
 				.exec(function(err, recipes){
 					res.send(recipes);
-				}) 
+				})
 
 
 
@@ -34,9 +34,13 @@ module.exports = function(db) {
 				Ingredient.create({name: "apples", amount: "1", _recipe: rec._id}, function(err, ing){
 					if(err){console.log(err)}
 					console.log(ing);
+					rec.ingredients.push(ing);
+					rec.save(function(err){
+						res.redirect('/recipes');
+					});
 				})
 			});
-			res.redirect('/recipes');
+			
 		}
 	}
 }
